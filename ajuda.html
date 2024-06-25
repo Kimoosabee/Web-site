@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazFit - Fale connosco</title>
+    <link rel="stylesheet" href="ajuda.css">
+</head>
+<body>
+    <!---Navbar in-->
+    <header>
+      
+        <div class="header-left">
+            <h1>AmazFit</h1>
+        </div>
+        <div class="header-right">
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="#">FAQ</a>
+                <a href="login.html">Login</a>
+                <a href="compra.html" class="compraragora">Comprar Agora</a>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+        </div>
+    </header>
+      <!---Navbar fim-->
+    <main>
+        <div class="contato-form">
+            <h1>Fale connosco</h1>
+            <p>Envie-nos uma mensagem e retornaremos o mais breve possível.</p>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira o seu nome">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Insira o seu email">
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Insira a sua mensagem"></textarea>
+                
+                <button type="submit">Submeter</button>
+            </form>
+        </div>
+    </main>
+    <!--Rodape-->
+    <footer>
+        <p>Copyright Empresas, todos os direitos reservados</p>
+        <div class="redes-socias">
+            <a href="#"><img src="icons/Insta.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/x-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+
+    <!--JavaScript do menu-->
+    <script>
+         document.addEventListener('DOMContentLoaded', () => {
+         const hamburger = document.getElementById('hamburger');
+         const menu = document.getElementById('menu');
+
+             hamburger.addEventListener('click', () => {
+             menu.classList.toggle('active');
+             });
+        });
+
+    </script>
+</body>
+
+</html>

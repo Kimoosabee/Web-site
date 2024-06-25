@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazFit</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <!---Navbar in-->
+    <header>
+      
+        <div class="header-left">
+            <h1>AmazFit</h1>
+        </div>
+        <div class="header-right">
+            <nav id="menu">
+                <a href="index.html">Home</a>
+                <a href="#">FAQ</a>
+                <a href="ajuda.html">Ajuda</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+        </div>
+    </header>
+      <!---Navbar fim-->
+
+    <main>
+        <section class="hero">
+            <img src="Imagens/back.png" alt="AmazFit Products">
+        </section>
+        <section class="product-details">
+            <div class="product-info">
+                <h2>Amazfit Active</h2>
+                <p>$85,00</p>
+                <div class="colors">
+                    <h3>Cor</h3>
+                    <div class="color-options">
+                        <div class="color-option" style="background-color: #000000;"></div>
+                        <div class="color-option" style="background-color: #8FBC8F;"></div>
+                        <div class="color-option" style="background-color: #FFC0CB;"></div>
+                        <div class="color-option" style="background-color: #333333;"></div>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <h3>Quantidade</h3>
+                    <input type="number" value="1" min="1">
+                </div>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+            <div class="product-image">
+                <img src="Imagens/venda.png" alt="Amazfit Active">
+            </div>
+        </section>
+    </main>
+    <!--Rodape-->
+    <footer>
+        <p>Copyright Empresas, todos os direitos reservados</p>
+        <div class="redes-socias">
+            <a href="#"><img src="icons/Insta.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/x-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+
+    <!--JavaScript do menu-->
+    <script>
+         document.addEventListener('DOMContentLoaded', () => {
+         const hamburger = document.getElementById('hamburger');
+         const menu = document.getElementById('menu');
+
+             hamburger.addEventListener('click', () => {
+             menu.classList.toggle('active');
+             });
+        });
+
+    </script>
+    
+</body>
+
+</html>

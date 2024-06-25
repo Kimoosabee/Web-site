@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmazFit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body> 
+     <!---Navbar in-->
+    <header>
+      
+        <div class="header-left">
+            <h1>AmazFit</h1>
+        </div>
+        <div class="header-right">
+            <nav id="menu">
+                <a href="#">FAQ</a>
+                <a href="ajuda.html">Ajuda</a>
+                <a href="login.html">Login</a>
+                <a href="compra.html" class="compraragora">Comprar Agora</a>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+        </div>
+    </header>
+      <!---Navbar fim-->
+
+
+      <!--Conteudo do centro da pagina -->
+    <main>
+        <section class="centro">
+            <h2>AmazFit</h2>
+            <h4>Fitness inteligente facilitado</h4>
+            <h3>Um clássico em ação</h3>
+            <p>Mais de 150 modalidades esportivas e reconhecimento de exercícios de força | Posicionamento de banda dupla e importação de rota <br>
+            Bateria ultralonga com duração de 14 dias | Gerenciamento de saúde fácil 24 horas por dia, 7 dias por semana | Chamadas telefônicas Bluetooth e armazenamento de música</p>
+        </section>
+        <section class="img-produto">
+            <img src="Imagens/Amazin.png" alt="AmazFit Smartwatch">
+        </section>
+        
+        <div id="Espaco"></div>
+         <!-- Seção de Produtos -->
+    <section class="produtos">
+    <div class="produto">
+        <img src="Imagens/R1.png" alt="Amazfit Bip 5 Unity">
+        <h3>Amazfit Bip 5 Unity</h3>
+        <p>The Essential Everyday Smartwatch</p>
+        
+    </div>
+    <div class="produto">
+        <img src="Imagens/R2.png" alt="Amazfit Active Edge">
+        <h3>Amazfit Active Edge</h3>
+        <p>Find Your Edge</p>
+        
+    </div>
+    <div class="produto">
+        <img src="Imagens/R3.png" alt="Amazfit Active">
+        <h3>Amazfit Active</h3>
+        <p>Stay Active, Stay Healthy</p>
+       
+    </div>
+    </section>
+    </main>
+
+    
+
+    <!--Rodape-->
+    <footer>
+        <p>Copyright Empresas, todos os direitos reservados</p>
+        <div class="redes-socias">
+            <a href="#"><img src="icons/Insta.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icons/x-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+
+    <!--JavaScript do menu-->
+    <script>
+         document.addEventListener('DOMContentLoaded', () => {
+         const hamburger = document.getElementById('hamburger');
+         const menu = document.getElementById('menu');
+
+             hamburger.addEventListener('click', () => {
+             menu.classList.toggle('active');
+             });
+        });
+
+    </script>
+</body>
+</html>
